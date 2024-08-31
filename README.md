@@ -6,3 +6,9 @@ Enhance your focus and speed by identifying numbers in sequential order within a
 
 ## Controls
 Click 'Play' to start, and challenge yourself to achieve the highest score possible !
+
+## Screenshots
+
+![Title_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/start_screen.PNG)
+
+![Play_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/play_screen.PNG)
