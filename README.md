@@ -1,5 +1,5 @@
                  🎮 
-“ Play this game in just 10 seconds ”
+“ Play This Game In Just 10 Seconds ”
 
 ## ✔ Goal 
 Enhance your focus and speed by identifying numbers in sequential order within a 10-second time frame. 
