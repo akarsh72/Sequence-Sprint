@@ -1,4 +1,4 @@
-# SEQUENCE SPRINT
+
 ### "Play this game in just 10 seconds."
 
 ## Goal
