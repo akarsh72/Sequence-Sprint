@@ -1,6 +1,10 @@
+# Sequence Sprint 
+## pygame to web browser
+
 import pygame
 import random
 import time
+import asyncio              # Import asyncio for web compatibility
 
 pygame.init()
 
@@ -8,7 +12,7 @@ pygame.init()
 BOX_SIZE = 80           
 MARGIN = 10
 
-# Screen dimensions based on grid siz and space for title, timer, button, and rules
+# Screen dimensions based on grid siz and space for title, timer, button, and guidelines
 GRID_SIZE = 5 * (BOX_SIZE + MARGIN) - MARGIN
 TITLE_SPACE = 100                               # the space below title
 TIMER_SPACE = 50                                # the space below timer
@@ -22,7 +26,7 @@ WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 ORANGE = (255, 165, 0)
 RED = (255, 0, 0)
-PURPEL = (128, 0, 128)
+PURPLE = (128, 0, 128)
 DARKBLUE = (0, 0, 139)
 SKYBLUE = (135, 206, 235)
 YELLOW = (255, 255, 0)
@@ -33,26 +37,27 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Designer & Developer: AKARSH PRAKASH")
 
 # Fonts
-title_font = pygame.font.SysFont('Impact', 70)
+title_font = pygame.font.SysFont(['Impact', 'Arial', 'sans-serif'], 70)
 font = pygame.font.SysFont(None, 55)
 small_font = pygame.font.SysFont(None, 40)
-guidelines_heading_font = pygame.font.SysFont('Trebuchet MS ', 50, bold=True)
-guidelines_font = pygame.font.SysFont('Verdana', 20)
+guidelines_heading_font = pygame.font.SysFont(['Trebuchet MS', 'Arial', 'sans-serif'], 50, bold=True)
+guidelines_font = pygame.font.SysFont(['Verdana', 'Arial', 'sans-serif'], 20)
 
 
 # Alarm sound
-pygame.mixer.init()
-alarm_sound = pygame.mixer.Sound('C:\\Users\\DELL\\Desktop\\VS_code\\Python\\Projects\\Sequence Sprint 01\\Alarm_Sound.mp3')  
+pygame.mixer.init()                
+alarm_sound = pygame.mixer.Sound('Alarm_Sound.ogg')  
 
 
-# Rules & Regulation section on the right-hand side, aligned with the grid
+
+# Guidelines section on the right-hand side, aligned with the grid
 def draw_guidelines():
     guidelines_x = SCREEN_WIDTH - GUIDELINES_WIDTH + 20
-    guidelines_y = TITLE_SPACE + TIMER_SPACE                 # Align the rules with the grid's top
+    guidelines_y = TITLE_SPACE + TIMER_SPACE                 # Align the guidelines with the grid's top
 
     guidelines_heading = guidelines_heading_font.render("Guidelines ", True, YELLOW)
     screen.blit(guidelines_heading, (guidelines_x, guidelines_y))
-    guidelines_y += guidelines_font.get_height() + 40  
+    guidelines_y += guidelines_heading_font.get_height() 
     
 
     guidelines_text = [
@@ -103,7 +108,7 @@ def generate_numbers():
 
 
 
-def main():
+async def main():                     # def main(): ---> async def main():
     clock = pygame.time.Clock()                      
     numbers = generate_numbers()
     show_numbers = False
@@ -115,7 +120,7 @@ def main():
 
     running = True
     while running:
-        screen.fill(ORANGE)           # Screen color
+        screen.fill(ORANGE)           # Screen color    
         
         for EVENT in pygame.event.get():
             if EVENT.type == pygame.QUIT:
@@ -135,30 +140,31 @@ def main():
             remaining_time = max(0, int(10 - elapsed_time))
             if elapsed_time > 10:
                 show_numbers = False
-                alarm_sound.play()           # Play the alarm sound
+                alarm_sound.play()          # Play the alarm sound
             else:
                 draw_grid(numbers, True)
 
             # Timer below the Title
             timer_text = small_font.render(f"Time Left: {remaining_time}s", True, RED)
-            screen.blit(timer_text, (SCREEN_WIDTH // 2 - timer_text.get_width() // 2, TITLE_SPACE))
+            screen.blit(timer_text, (SCREEN_WIDTH // 2 - timer_text.get_width() // 2, TITLE_SPACE + 5))
 
         else:
             draw_grid(numbers, False)
         
         # Play button just below the grid
         pygame.draw.rect(screen, GREEN, play_button_rect, border_radius=200)
-        play_text = small_font.render("PLAY", True, PURPEL)
-        screen.blit(play_text, (play_button_rect.x + 40, play_button_rect.y + 12))
+        play_text = small_font.render("PLAY", True, PURPLE)
+        screen.blit(play_text, (play_button_rect.x + 40, play_button_rect.y + 10))
 
         # Guidelines
         draw_guidelines()
         
         pygame.display.flip()
         clock.tick(60)
+        await asyncio.sleep(0)      # Yield control to the asyncio event loop
 
     # Exit Pygame
     pygame.quit()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())             # Use asyncio to run the main function
