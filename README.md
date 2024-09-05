@@ -1,5 +1,6 @@
                  🎮 
 “ Play This Game In Just 10 Seconds ”  🎮
+
 [Click here to play the game](https://akarsh72.github.io/Sequence-Sprint/build/web)
 "It may take a few seconds to load"
 
@@ -11,8 +12,8 @@ Click 'Play' to start, and challenge yourself to achieve the highest score possi
 
 ## ✔ Screenshots
 
-Start Screen
+# Start Screen
 ![Title_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/start_screen.PNG)
 
-Play Screen
+# Play Screen
 ![Play_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/play_screen.PNG)
