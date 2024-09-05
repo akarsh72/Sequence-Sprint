@@ -1,17 +1,17 @@
                     🎮 “ Play This Game In Just 10 Seconds ”  🎮
 
- "It may take a few seconds to load. [Play The Game Now](https://akarsh72.github.io/Sequence-Sprint/build/web)"
+ ⏳ *It may take a few seconds to load.* **[Play The Game Now](https://akarsh72.github.io/Sequence-Sprint/build/web)**
 
 ## ✔ Goal 
- Enhance your focus and speed by identifying numbers in sequential order within a 10-second time frame. 
+ 🚀 Enhance your focus and speed by identifying numbers in sequential order within a 10-second time frame. 
 
 ## ✔ Controls
- Click 'Play' to start, and challenge yourself to achieve the highest score possible !
+ 🖱️ Click 'Play' to start, and challenge yourself to achieve the highest score possible !
 
-## ✔ Screenshots
+## 🖼️ Screenshots
 
-### Start Screen
+**📱 Start Screen**
 ![Title_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/start_screen.PNG)
 
-### Play Screen
+**🕹️ Play Screen**
 ![Play_Screen](https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/main/Screeenshot/play_screen.PNG)
