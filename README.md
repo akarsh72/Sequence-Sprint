@@ -1,5 +1,4 @@
-                   🎮 
-“ Play This Game In Just 10 Seconds ”  🎮
+                    🎮 “ Play This Game In Just 10 Seconds ”  🎮
 
 ### "It may take a few seconds to load" -- { [Play The Game Now](https://akarsh72.github.io/Sequence-Sprint/build/web) }
 
