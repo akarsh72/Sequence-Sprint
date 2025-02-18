@@ -72,7 +72,7 @@ Click the link below to start your challenge:
 <table>
   <tr>
     <td>
-      <strong>👨‍💻 Designed and Developed by <b>Akarsh Prakash</b></strong><br>
+      👨‍💻 Designed and Developed by <strong>Akarsh Prakash</strong><br>
       📧 Contact: <a href="mailto:akarshprakash72@gmail.com">akarshprakash72@gmail.com</a><br>
       🌐 GitHub: <a href="https://github.com/akarsh72">akarsh72</a>
     </td>
