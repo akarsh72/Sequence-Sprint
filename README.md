@@ -69,9 +69,18 @@ Click the link below to start your challenge:
 ---
 
 ## 💻 **Developer**
-👨‍💻 Designed and Developed by **Akarsh Prakash**  
-📧 Contact: [akarshprakash72@gmail.com](mailto:akarshprakash72@gmail.com)  
-🌐 GitHub: [akarsh72](https://github.com/akarsh72)
+<table>
+  <tr>
+    <td>
+      <strong>👨‍💻 Designed and Developed by Akarsh Prakash</strong><br>
+      📧 Contact: <a href="mailto:akarshprakash72@gmail.com">akarshprakash72@gmail.com</a><br>
+      🌐 GitHub: <a href="https://github.com/akarsh72">akarsh72</a>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/akarsh72/Sequence-Sprint/refs/heads/main/Screeenshot/developer.jpeg" width="100" height="100" style="border-radius: 50%;">
+    </td>
+  </tr>
+</table>
 
 ---
 
