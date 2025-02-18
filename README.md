@@ -12,11 +12,11 @@
 ---
 
 ## 🕹️ **How to Play**
-1. **Start the Game**: Click the **'PLAY'** button to begin.
-2. **Memorize the Numbers**: A 5x5 grid will display numbers from **1 to 25** in random order for **10 seconds**.
-3. **Click in Sequence**: After the numbers disappear, click them in **ascending order (1 to 25)**.
-4. **Score**: Your score is the count of **sequential correct clicks**.
-5. **Game Over**: If you click the wrong number, the game ends. Click **'Restart'** to try again!
+1️⃣ **Start the Game**: Click the **'PLAY'** button to begin.
+2️⃣ **Memorize the Numbers**: A 5x5 grid will display numbers from **1 to 25** in random order for **10 seconds**.
+3️⃣ **Click in Sequence**: After the numbers disappear, click them in **ascending order (1 to 25)**.
+4️⃣ **Score**: Your score is the count of **sequential correct clicks**.
+5️⃣ **Game Over**: If you click the wrong number, the game ends. Click **'Restart'** to try again!
 
 ---
 
@@ -49,10 +49,10 @@
 ---
 
 ## 🚀 **Why Play Sequence Sprint?**
-- **Improve Focus**: Train your brain to quickly identify and remember sequences.
-- **Boost Speed**: Challenge yourself to complete the sequence faster each time.
-- **Fun and Addictive**: A simple yet engaging game for all ages.
-
+- **Improve Focus**: Train your brain to quickly identify and remember sequences. 🧠
+- **Boost Speed**: Challenge yourself to complete the sequence faster each time. ⚡
+- **Fun and Addictive**: A simple yet engaging game for all ages. 🎯
+-  **Completely free to play!** 🎉
 ---
 
 ## 📝 **Tips for Success**
@@ -90,10 +90,5 @@ If you enjoy the game, consider giving it a ⭐ on GitHub! Your support motivate
 
 ---
 
-## 📜 **License**
-This project is licensed under the **MIT License**. Feel free to use, modify, and share it!  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
----
 
 **Happy Gaming!** 🎮
