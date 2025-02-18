@@ -77,7 +77,7 @@ def game_over_screen():
 
     # Position for 'Restart' button (occupying the space)
     restart_button_x = SCREEN_WIDTH // 2 - 70
-    restart_button_y = SCREEN_HEIGHT// 2 + 80
+    restart_button_y = SCREEN_HEIGHT// 2 + 60
     restart_button_rect = pygame.Rect(restart_button_x, restart_button_y, 140, 50)
  
     # 'Restart' button 
@@ -145,7 +145,7 @@ def grid(numbers, visible):
                     text = font.render(f'0{number}', True, DARKBLUE)
                 else:
                     text = font.render(f'{number}', True, DARKBLUE)
-                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 25))
+                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 50))
 
 
 # Generating Shuffled list of numbers
@@ -175,7 +175,7 @@ async def main():                     # def main(): ---> async def main():
     start_time = None
 
     # Calculating the Position for the 'Play' button below the grid (occupying the space)
-    play_button_y = TITLE_SPACE + TIMER_SPACE + GRID_SIZE +  20
+    play_button_y = TITLE_SPACE + TIMER_SPACE + GRID_SIZE 
     play_button_x = SCREEN_WIDTH // 2 - GUIDELINES_WIDTH // 2 - 60
     play_button_rect = pygame.Rect(play_button_x, play_button_y, 120, 50)
 
