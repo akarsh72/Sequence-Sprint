@@ -77,13 +77,13 @@ def game_over_screen():
 
     # Position for 'Restart' button (occupying the space)
     restart_button_x = SCREEN_WIDTH // 2 - 70
-    restart_button_y = SCREEN_HEIGHT// 2 + 60
+    restart_button_y = SCREEN_HEIGHT// 2 + 80
     restart_button_rect = pygame.Rect(restart_button_x, restart_button_y, 140, 50)
  
     # 'Restart' button 
     pygame.draw.rect(screen, WHITE, restart_button_rect, border_radius=15)
     restart_text = small_font.render("Restart", True, RED)
-    screen.blit(restart_text, (restart_button_rect.x + 24, restart_button_rect.y)
+    screen.blit(restart_text, (restart_button_rect.x + 24, restart_button_rect.y + 12))
     
     return restart_button_rect
 
@@ -145,7 +145,7 @@ def grid(numbers, visible):
                     text = font.render(f'0{number}', True, DARKBLUE)
                 else:
                     text = font.render(f'{number}', True, DARKBLUE)
-                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 50))
+                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 16))
 
 
 # Generating Shuffled list of numbers
@@ -175,7 +175,7 @@ async def main():                     # def main(): ---> async def main():
     start_time = None
 
     # Calculating the Position for the 'Play' button below the grid (occupying the space)
-    play_button_y = TITLE_SPACE + TIMER_SPACE + GRID_SIZE 
+    play_button_y = TITLE_SPACE + TIMER_SPACE + GRID_SIZE +  20
     play_button_x = SCREEN_WIDTH // 2 - GUIDELINES_WIDTH // 2 - 60
     play_button_rect = pygame.Rect(play_button_x, play_button_y, 120, 50)
 
@@ -243,7 +243,7 @@ async def main():                     # def main(): ---> async def main():
         # 'Play' button just below the grid
         pygame.draw.rect(screen, DARK_OLIVE, play_button_rect, border_radius=15)
         play_text = small_font.render("PLAY", True, WHITE)
-        screen.blit(play_text, (play_button_rect.x + 27, play_button_rect.y ))
+        screen.blit(play_text, (play_button_rect.x + 27, play_button_rect.y + 13))
 
         # How To Play
         how_to_play()
