@@ -50,7 +50,7 @@ Click numbers from **1 to 25** in ascending order as quickly as possible. Test y
 
 ---
 
-## 📝 **Tips**
+## 📝 **Tips  for Success**
 1. Stay calm and memorize the numbers before clicking.
 2. Practice to improve your speed and accuracy.
 3. Aim for a perfect score of **25**!
@@ -58,6 +58,7 @@ Click numbers from **1 to 25** in ascending order as quickly as possible. Test y
 ---
 
 ## 🎉 **Ready to Play?**
+Click the link below to start your challenge:
 **[ [Play The Game Now](https://akarsh72.github.io/Sequence-Sprint/build/web) ]**
 
 ---
@@ -79,7 +80,7 @@ Click numbers from **1 to 25** in ascending order as quickly as possible. Test y
 ---
 
 ## 🙏 **Support**
-If you enjoy the game, give it a ⭐ on GitHub!  
+If you enjoy the game, consider giving it a ⭐ on GitHub! Your support motivates me to create more fun projects.    
 [![GitHub Stars](https://img.shields.io/github/stars/akarsh72/Sequence-Sprint?style=social)](https://github.com/akarsh72/Sequence-Sprint)
 
 ---
