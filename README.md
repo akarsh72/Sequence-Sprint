@@ -13,9 +13,13 @@
 
 ## 🕹️ **How to Play**
 1️⃣ **Start the Game**: Click the **'PLAY'** button to begin.
+
 2️⃣ **Memorize the Numbers**: A 5x5 grid will display numbers from **1 to 25** in random order for **10 seconds**.
+
 3️⃣ **Click in Sequence**: After the numbers disappear, click them in **ascending order (1 to 25)**.
+
 4️⃣ **Score**: Your score is the count of **sequential correct clicks**.
+
 5️⃣ **Game Over**: If you click the wrong number, the game ends. Click **'Restart'** to try again!
 
 ---
