@@ -83,7 +83,7 @@ def game_over_screen():
     # 'Restart' button 
     pygame.draw.rect(screen, WHITE, restart_button_rect, border_radius=15)
     restart_text = small_font.render("Restart", True, RED)
-    screen.blit(restart_text, (restart_button_rect.x + 24, restart_button_rect.y + 12))
+    screen.blit(restart_text, (restart_button_rect.x + 24, restart_button_rect.y + 9)
     
     return restart_button_rect
 
@@ -145,7 +145,7 @@ def grid(numbers, visible):
                     text = font.render(f'0{number}', True, DARKBLUE)
                 else:
                     text = font.render(f'{number}', True, DARKBLUE)
-                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 16))
+                screen.blit(text, (x + BOX_SIZE // 2 - 20, y + BOX_SIZE // 2 - 19))
 
 
 # Generating Shuffled list of numbers
@@ -243,7 +243,7 @@ async def main():                     # def main(): ---> async def main():
         # 'Play' button just below the grid
         pygame.draw.rect(screen, DARK_OLIVE, play_button_rect, border_radius=15)
         play_text = small_font.render("PLAY", True, WHITE)
-        screen.blit(play_text, (play_button_rect.x + 27, play_button_rect.y + 13))
+        screen.blit(play_text, (play_button_rect.x + 27, play_button_rect.y + 10))
 
         # How To Play
         how_to_play()
